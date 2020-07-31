@@ -139,12 +139,14 @@ html {
   color: var(--acent-color);
 }
 
-.img-envelope {
-  display: flex;
-  align-items: stretch;
+.img-envelope > .envelope {
+  display: inline-flex;
+  align-items: center;
 }
-.img-phone {
-  display: flex;
+
+.img-phone > .phone {
+  display: inline-flex;
+  align-items: center;
 }
 
 .icon-envelope {
