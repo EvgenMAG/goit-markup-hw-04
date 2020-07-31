@@ -149,11 +149,11 @@ html {
 
 .icon-envelope {
   margin-right: 10px;
-  fill: #757575;
+  fill: currentColor;
 }
 .icon-phone {
   margin-right: 10px;
-  fill: #757575;
+  fill: currentColor;
 }
 
 .icon-envelope:hover {
@@ -475,16 +475,16 @@ html {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+  color: #afb1b8;
 }
+
 .clients-link:hover {
   border-color: var(--acent-color);
+  color: var(--acent-color);
 }
 
 .clients-icon {
-}
-
-.clients-icon:hover {
-  --color3: #2196f3;
+  --color3: currentColor;
 }
 
 /* .clients-item:nth-child(1) {
