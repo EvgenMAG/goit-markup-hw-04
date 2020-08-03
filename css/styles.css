@@ -158,13 +158,13 @@ html {
   fill: currentColor;
 }
 
-.icon-envelope:hover {
+/* .icon-envelope:hover {
   fill: var(--acent-color);
 }
 
 .icon-phone:hover {
   fill: var(--acent-color);
-}
+} */
 
 /* .img-envelope {
   display: flex;
@@ -243,7 +243,9 @@ html {
   align-items: center;
 }
 .foot-style .button {
-  display: inline-flex;
+  display: flex;
+  width: 200px;
+  margin-left: auto;
 
   border-radius: 4px;
   padding: 10px 28px;
@@ -422,7 +424,7 @@ html {
   color: var(--acent-color);
 } */
 
-.social.list {
+.social.list.team {
   display: flex;
   width: 206px;
   margin-left: auto;
@@ -433,17 +435,27 @@ html {
   margin-left: 10px;
 }
 
-.team-item-icon {
-  display: block;
-  --color4: #fff;
-  --color3: #afb1b8;
+.social-link-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
+  color: #afb1b8;
+  border-radius: 50%;
 }
-.team-item-icon:hover {
-  --color4: #2196f3;
-  --color3: #fff;
+
+.social-link-team:hover {
+  background-color: var(--acent-color);
+  color: #fff;
 }
+
+.team-item-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 /* .list.team > .social-item:nth-child(1) {
   background-image: url(../img-main/instagram-grey.svg);
 }
@@ -486,7 +498,7 @@ html {
 }
 
 .clients-icon {
-  --color3: currentColor;
+  fill: currentColor;
 }
 
 /* .clients-item:nth-child(1) {
@@ -536,13 +548,12 @@ a {
   font-size: 26px;
   line-height: 1.2;
 }
-.adress.foot-item {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 .foot-style {
   background-color: #2f303a;
   color: white;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .list.contacts > li:not(:last-child) {
@@ -566,6 +577,7 @@ a {
   font-size: 14px;
   line-height: 1.7;
 }
+
 div > b {
   display: block;
   font-weight: 700;
@@ -577,14 +589,24 @@ div > b {
 
 .footer-flex {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
 }
-.foot-item.subscribe {
-  margin-left: auto;
-}
+.adress.foot-item,
 .foot-item.social {
-  margin-left: 69px;
+  width: calc((50% - 45px) / 2);
+}
+
+.foot-item.subscribe {
+  width: calc(50% - 15px);
+}
+
+.foot-item.social {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.foot-item .social.list {
+  display: flex;
+  width: 206px;
 }
 
 .foot-style .link:hover,
@@ -592,7 +614,28 @@ div > b {
   color: var(--acent-color);
 }
 
+.foot-item .foot-soc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  color: #fff;
+}
+
 .footer-item-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.foot-item .foot-soc:hover {
+  background-color: var(--acent-color);
+}
+
+/* .footer-item-icon {
   display: block;
   --color4: rgba(255, 255, 255, 0.1);
   --color3: #fff;
@@ -602,7 +645,7 @@ div > b {
 .footer-item-icon:hover {
   --color4: #2196f3;
   --color3: #fff;
-}
+} */
 
 .item-sign {
   margin-left: 10px;
@@ -656,7 +699,11 @@ div > b {
   padding-bottom: 20px;
   padding-right: 24px;
   padding-left: 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
+
 .product.list {
   display: flex;
   flex-wrap: wrap;
@@ -674,7 +721,6 @@ div > b {
 
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
 }
 
 .flex.list-item:nth-child(3n) {
