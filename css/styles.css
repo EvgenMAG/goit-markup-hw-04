@@ -360,7 +360,10 @@ html {
 .job-item.flex {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
+  height: 294px;
+  background-color: #f5f4fa;
 }
+
 .job-item.flex:last-child {
   margin-right: 0px;
 }
@@ -369,6 +372,8 @@ html {
 }
 .job-item img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* Наша команда */
 .section.bg {
@@ -399,6 +404,8 @@ html {
 
 .item.flex > img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .our-team h3 {
@@ -714,6 +721,8 @@ div > b {
 }
 .product img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .flex.list-item {
