@@ -57,9 +57,6 @@ html {
   padding-right: 15px;
 }
 
-.header {
-}
-
 /* Logo */
 
 .logo.head {
@@ -258,6 +255,7 @@ html {
 
   align-items: center;
 }
+
 /* Section */
 .section {
   padding-top: 94px;
